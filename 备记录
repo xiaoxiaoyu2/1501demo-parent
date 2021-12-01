@@ -1,0 +1,3 @@
+est-server eureka服务器的端口:9000
+
+est-provider 商品9090,  9091...

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--驼峰命名法转换↓
+	   将数据库底层的属性名自动转换为实体类里的属性↓-->
+   <settings>
+	   <setting name="mapUnderscoreToCamelCase" value="true"/>
+   </settings>
+
+	<!--给实体的类型起别名↓-->
+	<typeAliases>
+		<!--<typeAlias type="com.team.entity.Grade" alias="Grade"></typeAlias>-->
+	      <!--将指定包中所有的简单类名当做其别名↓-->
+		<package name="com.team.est.entity"/>
+	</typeAliases>
+
+	<!--配置分页的插件-->
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+	</plugins>
+
+	<!-- 加载sql映射文件-->
+	<mappers>
+		<package name="com.team.est.mapper"/>
+	</mappers>
+
+</configuration>

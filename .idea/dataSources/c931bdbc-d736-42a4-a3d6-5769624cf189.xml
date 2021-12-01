@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="demo1501DB">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>4.4.10</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="demo1501">
+      <Current>1</Current>
+    </schema>
+    <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="4" name="demo"/>
+    <table id="7" parent="4" name="modlue"/>
+    <table id="8" parent="4" name="test"/>
+    <table id="9" parent="4" name="testDemo"/>
+    <column id="10" parent="6" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="11" parent="6" name="age">
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="12" parent="6" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="14" parent="7" name="age">
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="15" parent="7" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="16" parent="8" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="17" parent="8" name="age">
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="18" parent="8" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="19" parent="8" name="naem">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="20" parent="9" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="21" parent="9" name="pwd">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="9" name="userName">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
